@@ -6,7 +6,7 @@ Turning on and off bulbs using voice recognition and Natural language processing
 * [Flask](http://flask.pocoo.org/)
 ## Run
 Run
-```Python app.py```
+```python app.py```
 to run the flask web app.
 
 Run 
