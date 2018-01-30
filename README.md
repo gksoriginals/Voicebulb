@@ -12,4 +12,5 @@ to run the flask web app.
 Run 
 ```python train.py```
 to retrain the models
+##This cute [kid](https://github.com/hadeeb) got the [frontend](https://github.com/hadeeb/lightbulb) !
 
