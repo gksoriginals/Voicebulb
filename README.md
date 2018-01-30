@@ -2,4 +2,4 @@
 Turning on and off bulbs using voice recognition and Natural language processing
 ## You need
 * [python](www.python.org)
-* [spacy](www.spacy.org)
+* [spacy](https://spacy.io/)
