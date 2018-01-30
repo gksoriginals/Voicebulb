@@ -11,13 +11,6 @@ app.config['SECRET_KEY'] = '22334455'
 def send_recieve():
    control = {'status':None, 'text':None, 'blue_state':0, 'red_state':0}
    if request.method=='GET':
-      try:
-         data = json.loads(request.data.decode('utf-8'))
-         log(data)
-      except (ValueError,TypeError,KeyError):
-         print("Error caught")
-         control['status'] = 0
-         return json.dumps(control)
       control['status'] = 1
       data = request.args.get('text')
       intent = action_predict(str(data), 'bulb')
