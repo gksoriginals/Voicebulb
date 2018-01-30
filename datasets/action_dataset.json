@@ -1,0 +1,34 @@
+[
+    {
+        "intent": "ON",
+        "sentence": "turn on lights"
+    },
+    {
+        "intent": "ON",
+        "sentence": "turn lights on"
+    },
+    {
+        "intent": "ON",
+        "sentence": "blue light on"
+    },
+    {
+        "intent": "ON",
+        "sentence": "red light on"
+    },
+    {
+        "intent": "OFF",
+        "sentence": "turn off lights"
+    },
+    {
+        "intent": "OFF",
+        "sentence": "turn lights off"
+    },
+    {
+        "intent": "OFF",
+        "sentence": "turn off red light"
+    },
+    {
+        "intent": "OFF",
+        "sentence": "turn off blue light"
+    }
+]

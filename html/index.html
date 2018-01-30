@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Voice Bulb</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://bootswatch.com/4/flatly/bootstrap.min.css" />
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="index.css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary justify-content-center">
+        <a class="navbar-brand" href="#">VoiceBulb</a>
+    </nav>
+    <main role="main" class="container">
+    <div class="container align-items-center">
+        <div class="row justify-content-center">
+            <div class="justify-content-center">
+                <span class="fa-stack fa-lg fa-5x text-danger" onclick="toggle('red-bulb');">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-lightbulb-o fa-stack-1x fa-inverse" id="red-bulb"></i>
+                </span>
+            </div>
+            <div class="justify-content-center">
+                    <span class="fa-stack fa-lg fa-5x text-success" onclick="toggle('blue-bulb');">
+                        <i class="fa fa-circle fa-stack-2x"></i>
+                        <i class="fa fa-lightbulb-o fa-stack-1x fa-inverse" id="blue-bulb"></i>
+                    </span>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <label id="detect-text">.</label>
+        </div>
+        <div class="row justify-content-center">
+            <i id="loading" class=""></i>
+        </div>
+        <div class="row justify-content-center">
+            <span class="fa-stack fa-lg fa-5x grow" id="voice-btn" onclick="startDictation()">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-microphone fa-stack-1x fa-inverse" id="mic-ico"></i>
+            </span>
+        </div>
+        <div class="row">
+            <div class="offset-7">
+                <i  class="fa fa-question-circle fa-2x" 
+                    data-toggle="modal" data-target="#infoModal"></i>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <ul id="messages">
+            </ul>
+        </div>
+    </div>
+    </main>
+
+    <footer class="footer btn-secondary bg-primary">
+        <div class="container text-center">
+            <span>Made with <i class="fa fa-heart text-danger"></i> by 
+                <a href="https://github.com/GopikrishnanSasikumar">Gopi</a> & <a href="https://github.com/hadeeb">Farhan</a>
+            </span>
+        </div>
+    </footer>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="infoModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">What is this?</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              Press the 'mic' icon and say <br/> "Turn on blue light"<br/>"Turn the lights off", etc.
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+</body>
+</html>
