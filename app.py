@@ -42,14 +42,14 @@ def send_recieve():
           control['text'] = "intent recognised OFF \n"
           if 'blue' in entities:
               control['text'] = control['text']+'entity recognised Blue light \n'
-              control['blue_state'] = 0
+              control['blue_state'] = 2
           elif 'red' in entities:
               control['text'] = control['text']+'entity recognised Red light \n'
-              control['red_state'] = 0
+              control['red_state'] = 2
           elif 'lights' in entities:
               control['text'] = control['text']+'entity recognised Blue light and Blue light\n'
-              control['red_state'] = 0
-              control['blue_state'] = 0
+              control['red_state'] = 2
+              control['blue_state'] = 2
       control = json.dumps(control)
       return control
 def log(message):
