@@ -1,19 +1,12 @@
-<<<<<<< HEAD
 import os.path
 from ghee.action import action_predict
 from ghee.ner import ner_predict
 from flask import Flask,request,Response
-=======
-from ghee.action import action_predict
-from ghee.ner import ner_predict
-from flask import Flask,request
->>>>>>> c1232707e095ec42438ebf199ac488100a38ac02
 import json
 import sys
 app = Flask(__name__)
 app.config['SECRET_KEY'] = '22334455'
 
-<<<<<<< HEAD
 def root_dir():  # pragma: no cover
     return os.path.abspath(os.path.dirname(__file__))
 
@@ -38,8 +31,6 @@ def fun2():
 def fun3():
     content = get_file('html/index.css')
     return Response(content, mimetype="text/css")
-=======
->>>>>>> c1232707e095ec42438ebf199ac488100a38ac02
 
 @app.route('/bulb',methods=['GET'])
 def send_recieve():
@@ -53,7 +44,6 @@ def send_recieve():
       for i in ent:
           entities.append(i[1])
       log(entities)
-<<<<<<< HEAD
       arr = []
       if intent == 'ON':
           arr.append("Intent recognised : ON")
@@ -80,32 +70,6 @@ def send_recieve():
               control['red_state'] = 2
               control['blue_state'] = 2
       control["text"] = arr
-=======
-      if intent == 'ON':
-          control['text'] = "intent recognised ON \n"
-          if 'blue' in entities:
-              control['text'] = control['text']+'entity recognised Blue light \n'
-              control['blue_state'] = 1
-          elif 'red' in entities:
-              control['text'] = control['text']+'entity recognised Red light \n'
-              control['red_state'] = 1
-          elif 'lights' in entities:
-              control['text'] = control['text']+'entity recognised Blue light and Red light\n'
-              control['red_state'] = 1
-              control['blue_state'] = 1
-      elif intent == 'OFF':
-          control['text'] = "intent recognised OFF \n"
-          if 'blue' in entities:
-              control['text'] = control['text']+'entity recognised Blue light \n'
-              control['blue_state'] = 2
-          elif 'red' in entities:
-              control['text'] = control['text']+'entity recognised Red light \n'
-              control['red_state'] = 2
-          elif 'lights' in entities:
-              control['text'] = control['text']+'entity recognised Blue light and Blue light\n'
-              control['red_state'] = 2
-              control['blue_state'] = 2
->>>>>>> c1232707e095ec42438ebf199ac488100a38ac02
       control = json.dumps(control)
       return control
 def log(message):
