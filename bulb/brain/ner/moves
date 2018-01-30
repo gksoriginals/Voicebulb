@@ -1,0 +1,32 @@
+Å´transitions⁄z[
+  {
+    "clas":0,
+    "move":1,
+    "label":"bulb",
+    "name":"B-bulb"
+  },
+  {
+    "clas":1,
+    "move":2,
+    "label":"bulb",
+    "name":"I-bulb"
+  },
+  {
+    "clas":2,
+    "move":3,
+    "label":"bulb",
+    "name":"L-bulb"
+  },
+  {
+    "clas":3,
+    "move":4,
+    "label":"bulb",
+    "name":"U-bulb"
+  },
+  {
+    "clas":4,
+    "move":5,
+    "label":"",
+    "name":"O"
+  }
+]

@@ -1,0 +1,202 @@
+[
+    {
+        "intent": "who",
+        "sentence": "who are you"
+    },
+    {
+        "intent": "who",
+        "sentence": "tell me your name"
+    },
+    {
+        "intent": "who",
+        "sentence": "what is your name"
+    },
+    {
+        "intent": "who",
+        "sentence": "who is sai"
+    },
+    {
+        "intent": "who",
+        "sentence": "tell me about yourself"
+    },
+    {
+        "intent": "who",
+        "sentence": "tell me about you"
+    },
+    {
+        "intent": "greetings",
+        "sentence": "hi"
+    },
+    {
+        "intent": "greetings",
+        "sentence": "hello"
+    },
+    {
+        "intent": "greetings",
+        "sentence": "hola"
+    },
+    {
+        "intent": "greetings",
+        "sentence": "hai"
+    },
+    {
+        "intent": "greetings",
+        "sentence": "greetings"
+    },
+    {
+        "intent": "contact",
+        "sentence": "call someone"
+    },
+    {
+        "intent": "contact",
+        "sentence": "call someone"
+    },
+    {
+        "intent": "contact",
+        "sentence": "call"
+    },
+    {
+        "intent": "contact",
+        "sentence": "make a call"
+    },
+    {
+        "intent": "contact",
+        "sentence": "contact"
+    },
+    {
+        "intent": "location",
+        "sentence": "how can i reach"
+    },
+    {
+        "intent": "location",
+        "sentence": "how to reach"
+    },
+    {
+        "intent": "location",
+        "sentence": "navigate me to"
+    },
+    {
+        "intent": "location",
+        "sentence": "navigate"
+    },
+    {
+        "intent": "location",
+        "sentence": "how to go"
+    },
+    {
+        "intent": "location",
+        "sentence": "where is something"
+    },
+    {
+        "intent": "location",
+        "sentence": "where is"
+    },
+    {
+        "intent": "location",
+        "sentence": "how to get there"
+    },
+    {
+        "intent": "location",
+        "sentence": "location"
+    },
+    {
+        "intent": "contact",
+        "sentence": "call"
+    },
+    {
+        "intent": "time",
+        "sentence": "the time"
+    },
+    {
+        "intent": "time",
+        "sentence": "the time now"
+    },
+    {
+        "intent": "time",
+        "sentence": "time now"
+    },
+    {
+        "intent": "time",
+        "sentence": "good morning"
+    },
+    {
+        "intent": "time",
+        "sentence": "good afternoon"
+    },
+    {
+        "intent": "time",
+        "sentence": "good evening"
+    },
+    {
+        "intent": "time",
+        "sentence": "good night"
+    },
+    {
+        "intent": "date",
+        "sentence": "date today"
+    },
+    {
+        "intent": "date",
+        "sentence": "date"
+    },
+    {
+        "intent": "date",
+        "sentence": "which month is this"
+    },
+    {
+        "intent": "date",
+        "sentence": "what is today"
+    },
+    {
+        "intent": "date",
+        "sentence": "today"
+    },
+    {
+        "intent": "date",
+        "sentence": "which year is this"
+    },
+    {
+        "intent": "date",
+        "sentence": "today date"
+    },
+    {
+        "intent": "weather",
+        "sentence": "what is the weather"
+    },
+    {
+        "intent": "weather",
+        "sentence": "what is the weather now"
+    },
+    {
+        "intent": "weather",
+        "sentence": "weather now"
+    },
+    {
+        "intent": "weather",
+        "sentence": "tell me the weather"
+    },
+    {
+        "intent": "weather",
+        "sentence": "show the weather"
+    },
+    {
+        "intent": "weather",
+        "sentence": "do i have to take an umberlla"
+    },
+    {
+        "intent": "weather_in_loc",
+        "sentence": "what is the weather now in kaloor"
+    },
+    {
+        "intent": "weather_in_loc",
+        "sentence": "whats the weather in thrissur"
+    },
+    {
+        "intent": "weather_in_loc",
+        "sentence": "tell me the weather in kottayam"
+    },
+    {
+        "intent": "weather_in_loc",
+        "sentence": "show the weather in miami"
+    }
+]
