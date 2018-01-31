@@ -50,7 +50,7 @@ def send_recieve():
           if 'blue' in entities:
               arr.append("Entity recognised : Blue light")
               control['blue_state'] = 1
-          elif 'red' in entities:
+          if 'red' in entities:
               arr.append("Entity recognised : Red light")
               control['red_state'] = 1
           elif 'lights' in entities:
