@@ -38,8 +38,8 @@ def send_recieve():
    if request.method=='GET':
       control['status'] = 1
       data = request.args.get('text')
-      intent = action_predict(str(data), 'bulb')
-      ent = ner_predict(str(data),  'bulb')
+      intent = action_predict(str(data).lower(), 'bulb')
+      ent = ner_predict(str(data).lower(),  'bulb')
       entities = []
       for i in ent:
           entities.append(i[1])
