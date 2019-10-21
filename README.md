@@ -1,5 +1,5 @@
 # Voicebulb
-Turning on and off bulbs using voice recognition and Natural language processing
+Turning on and off bulbs using voice recognition and Natural language processing.
 ## You need
 * [python](https://www.python.org/)
 * [spacy](https://spacy.io/)
